@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iss_ltbtp.Presentation.Controller.SignUpController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="56.0" prefHeight="47.0" prefWidth="137.0" text="Sign Up" textAlignment="CENTER">
+        <font>
+            <Font size="32.0" />
+        </font>
+    </Label>
+    <Button layoutX="287.0" layoutY="250.0" mnemonicParsing="false" onAction="#onSignUpBtnClicked" text="Sign Up" />
+    <TextField fx:id="usernameField" layoutX="233.0" layoutY="115.0" promptText="username" />
+    <PasswordField fx:id="passwordField" layoutX="233.0" layoutY="156.0" promptText="password" />
+    <Label layoutX="180.0" layoutY="293.0" onMouseClicked="#onLoginLinkClicked" text="Already have an account? Login!" textAlignment="CENTER">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+   <ToggleButton fx:id="developerSelectionBtn" layoutX="310.0" layoutY="200.0" mnemonicParsing="false" onAction="#onDeveloperSelectionBtnClicked" text="Developer" />
+   <ToggleButton fx:id="testerSelectionBtn" layoutX="233.0" layoutY="200.0" mnemonicParsing="false" onAction="#onTesterSelectionBtnClicked" prefHeight="26.0" prefWidth="70.0" text="Tester" />
+   <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="336.0" prefHeight="18.0" prefWidth="502.0" text="Label" textAlignment="CENTER" textFill="RED" visible="false" />
+</AnchorPane>
